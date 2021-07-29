@@ -10,8 +10,9 @@ export class HeaderComponent {
 
   constructor(private dataStorageService: DataStorageService) {}
 
-  onSaveData() {
+  onSaveData() {debugger
     this.dataStorageService.storeRecipes();
+
   }
 
   onFetchData() {

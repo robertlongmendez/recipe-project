@@ -11,7 +11,7 @@ export class DataStorageService {
 
   storeRecipes() {
     const recipes = this.recipeService.getRecipes();
-    return this.http.put('https://ng-course-recipe-book-e1028-default-rtdb.firebaseio.com/recipes.json', recipes).subscribe(response => {
+     this.http.put('https://ng-course-recipe-book-e1028-default-rtdb.firebaseio.com/recipes.json', recipes).subscribe(response => {
       console.log(response);
     });
   }
